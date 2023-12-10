@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./JsonViewer.css";
 
 interface Response {
-  resp: FetchedData;
+  res: FetchedData;
 }
 
 interface Field {
@@ -109,7 +109,7 @@ const JsonViewer: React.FC<{ response: Response }> = ({ response }) => {
       <h2>Response</h2>
       {Object.keys(response).map((mainKey) => (
         <div key={mainKey} className="json-data">
-          {Object.entries(response.resp).map(([key, value], index, array) => (
+          {Object.entries(response.res).map(([key, value], index, array) => (
             <div key={key}>
               <span
                 className={`json-key ${

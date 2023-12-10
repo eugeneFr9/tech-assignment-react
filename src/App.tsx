@@ -2,7 +2,7 @@ import React from "react";
 import JsonViewer from "./JsonViewer";
 
 const jsonResponse = `{
-  "resp": {
+  "res": {
     "date": "2021-10-27T07:49:14.896Z",
     "hasError": false,
     "fields": [
