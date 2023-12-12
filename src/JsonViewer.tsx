@@ -87,7 +87,7 @@ const JsonViewer: React.FC<{ response: Response }> = ({ response }) => {
     } else {
       return (
         <span>
-          {typeof value === "string" ? `'${value}'` : JSON.stringify(value)}
+          {typeof value === "string" ? `'${value}'` : value.toString()}
         </span>
       );
     }
